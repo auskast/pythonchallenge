@@ -1,10 +1,10 @@
 def main():
     text = ''.join([line.rstrip() for line in open('ocr.txt')])
-    myMap = {}
+    mymap = {}
     for c in text:
-        myMap[c] = myMap.get(c, 0) + 1
-    avg = len(text) / len(myMap)
-    output = ''.join([c for c in text if myMap[c] < avg])
+        mymap[c] = mymap.get(c, 0) + 1
+    avg = len(text) / len(mymap)
+    output = ''.join([c for c in text if mymap[c] < avg])
     print output
 
 if __name__ == '__main__':

@@ -12,9 +12,9 @@ def solution2(text):
     markers = ''.join(['1' if c.isupper() else '0' for c in text])
     pattern = '011101110'
 
-    def f(res, t, markers):
-        n = len(markers.partition(pattern)[0])
-        return f(res + t[n+4], t[n+4:], markers[n+4:]) if n != len(markers) else res
+    def f(res, t, _markers):
+        n = len(_markers.partition(pattern)[0])
+        return f(res + t[n+4], t[n+4:], _markers[n+4:]) if n != len(_markers) else res
     return f('', text, markers)
 
 

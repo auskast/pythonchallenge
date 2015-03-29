@@ -8,7 +8,7 @@ def getnothing(nothing):
 
 def main():
     nothing = '12345'
-    pattern = re.compile('nothing is (\d+)')
+    pattern = re.compile(r'nothing is (\d+)')
     while True:
         data = getnothing(nothing).read()
         print data
