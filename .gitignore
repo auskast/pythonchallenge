@@ -56,6 +56,6 @@ docs/_build/
 # PyBuilder
 target/
 
-good.png
-even.jpg
-odd.jpg
+9/good.png
+11/even.jpg
+11/odd.jpg
