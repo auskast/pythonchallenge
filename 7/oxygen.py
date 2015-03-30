@@ -1,6 +1,7 @@
-from PIL import Image
 import StringIO
 import urllib
+
+from PIL import Image
 
 
 def main():
